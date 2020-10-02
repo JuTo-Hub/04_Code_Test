@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Welcome To The Code Test</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="timer">Time: 50</div>
+        <h1 class="main">CODE QUIZ</h1>
+        <div class="content">
+            <p>Welcome to the code quiz! You have 50 seconds to answer 5 questions.<br>
+                5 seconds will be removed from the timer for every incorrect answer.<br>
+                Once you finish you will add your initials to the list of highscores.<br>
+                Good luck. Press START to play.</p>
+        </div>
+        <button class="start">START</button>
+        <div class="verify"></div>
+        <form onsubmit="return false" class="initials">Enter Your Initials <input type="text" class="initialsTextBox" />
+            <button class="initialSubmit"> Enter </button></form>
+        <table class="scoreboard">
+            <tr>
+                <td>Initial</td>
+                <td>Score</td>
+            </tr>
+        </table>
+        <div class="endOfGameButtons">
+            <button class="restart">Restart</button>
+            <button class="clear">Clear High Scores</button>
+        </div>
+    </div>
+
+    <script src="./Assets/logic.js"></script>
+</body>
+
+</html>
